@@ -1,0 +1,118 @@
+
+body {
+    background-color: rgb(143, 92, 156);
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+main section {
+    background-color: rgb(250, 196, 240);
+    padding-inline: 10em;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    justify-content: space-between;
+}
+
+.seccion-1{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acerca-imagen img{
+    border-radius: 5em;
+}
+
+nav ul {
+    display: flex;
+    color: rgb(255, 255, 255);
+    gap: 1.3em;
+}
+
+footer h3{
+    display: flex;
+    border: 1px solid;
+    color: rgb(255, 255, 255); 
+    justify-content: center; 
+    font-size: 2em; 
+}
+
+.fb {
+    display: inline-block;
+    color: rgb(5, 3, 3); 
+    position: relative;
+    justify-content: left; 
+    font-family: Helvetica;
+    font-size: 30px; 
+}
+
+.insta {
+    display: block;
+    color: rgb(5, 3, 3); 
+    position: relative;
+    justify-content: right; 
+    font-family: Helvetica;
+    font-size: 50px; 
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: azure;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px){
+    body{
+        background-color: orange;
+    }
+    main{
+        text-size-adjust: center;
+    }
+    .seccion-1{
+        flex-wrap: wrap;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100em;
+        background: pink;
+        text-align: center;
+        top: 90px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        display: block;
+    }
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ .checkbtn{
+        color: red;     
+    }
+    
+}
