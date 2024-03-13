@@ -13,6 +13,7 @@ main section {
 
 .greeting {
     text-align: center;
+    font-size: medium;
 }
 
 header {
