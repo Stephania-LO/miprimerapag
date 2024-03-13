@@ -11,6 +11,9 @@ main section {
     padding-inline: 10em;
 }
 
+.greeting {
+    font-style: arial black;
+}
 
 header {
     display: flex;
