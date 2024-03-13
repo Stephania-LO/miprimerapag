@@ -12,7 +12,7 @@ main section {
 }
 
 .greeting {
-    position: static;
+    text-align: center;
 }
 
 header {
