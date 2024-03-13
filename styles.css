@@ -24,7 +24,7 @@ header {
 }
 
 .seccion-1{
-    background-color: blue;
+    background-color: rgb(225, 164, 204);
     display: flex;
     justify-content: center;
     align-items: center;
