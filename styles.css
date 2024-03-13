@@ -12,7 +12,7 @@ main section {
 }
 
 .greeting {
-    font-style: arial black;
+    position: static;
 }
 
 header {
